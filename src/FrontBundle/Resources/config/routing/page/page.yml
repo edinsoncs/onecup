@@ -1,0 +1,9 @@
+front_page_view:
+    path:     /
+    defaults: { _controller: "FrontBundle:Home:index" }
+    methods:  GET
+
+front_page_login:
+    path:     /login
+    defaults: { _controller: "FrontBundle:Login:index" }
+    methods:  GET

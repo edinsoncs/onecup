@@ -1,0 +1,35 @@
+{% extends "FrontBundle::layaout.html.twig" %}
+
+{% block content %}
+
+<div id="wrapper">
+    <main class="animated fadeInDown">
+        <div class="row">
+            <div class="login-header">
+                <img src="{{asset('assets/img/logos/img-logo-001.svg')}}"/>            
+                <h1>Bienvenido a OneCup</h1>
+                <p>Complete con sus datos para ingresar</p>
+            </div>
+            <div class="login-form">
+                <form role="form"  action="{{ path('fos_user_security_login') }}" method="POST">
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Correo electrónico o usuario" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Ingresa tu contraseña" required>
+                    </div>
+                    <div class="form-group">
+                        <a class="btn btn-md btn-blue">Acceder</a>
+                    </div>
+                </form>
+            </div>
+            <div class="login-footer">
+                <a href="#">¿No tienes una cuenta?</a>
+                <a href="#">¿Olvidaste tu contraseña?</a>
+            </div>
+        </div>
+    </main>
+</div>
+
+
+{% endblock %}

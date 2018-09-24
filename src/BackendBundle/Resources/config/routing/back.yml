@@ -1,0 +1,7 @@
+backend_index:
+    resource: "@BackendBundle/Resources/config/routing/dashboard/page.yml"
+
+
+backend_users:
+    resource: "@BackendBundle/Resources/config/routing/dashboard/users.yml"
+    prefix:     /users

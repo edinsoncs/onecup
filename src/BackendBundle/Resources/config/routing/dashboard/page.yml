@@ -1,0 +1,5 @@
+backend_dashboard_home:
+    path:     /
+    defaults: { _controller: "BackendBundle:Welcome:index" }
+    methods:  GET
+

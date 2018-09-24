@@ -10,7 +10,7 @@
                 <h1>Bienvenido a OneCup</h1>
                 <p>Complete con sus datos para ingresar</p>
             </div>
-            <div class="login-form">
+            <div class="login-form" id="login">
                 <form role="form"  action="{{ path('fos_user_security_login') }}" method="POST">
                     <div class="form-group">
                         <input type="email" class="form-control" name="_username" placeholder="Correo electrónico o usuario">
@@ -23,9 +23,22 @@
                     </div>
                 </form>
             </div>
+            <div class="login-form d-none" id="reset">
+                
+                 <form role="form"  action="{{ path('fos_user_security_login') }}" method="POST">
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="_username" placeholder="Escribe Correo electrónico o usuario">
+                    </div>
+                   
+                    <div class="form-group">
+                        <input type="submit" value="Restablecer">
+                    </div>
+                </form>
+
+            </div>
             <div class="login-footer">
                 <a href="#">¿No tienes una cuenta?</a>
-                <a href="#">¿Olvidaste tu contraseña?</a>
+                <a href="#" onclick="resetPassword(this); return false;">¿Olvidaste tu contraseña?</a>
             </div>
         </div>
     </main>

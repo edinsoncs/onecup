@@ -5,7 +5,8 @@
     "autoload": {
         "psr-4": {
             "AppBundle\\": "src/AppBundle",
-            "FrontBundle\\": "src/FrontBundle"
+            "FrontBundle\\": "src/FrontBundle",
+            "BackendBundle\\": "src/BackendBundle"
         },
         "classmap": [
             "app/AppKernel.php",

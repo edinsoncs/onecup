@@ -1,0 +1,4 @@
+backend_dashboard_users:
+    path:     /
+    defaults: { _controller: "BackendBundle:Users:index" }
+    methods:  GET

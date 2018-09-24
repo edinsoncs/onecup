@@ -1,8 +1,18 @@
+
+#Routes with frontend
 front:
     resource: "@FrontBundle/Resources/config/routing/front.yml"
     prefix: /
 
 
+#Routes with backend 
+backend:
+    resource: "@BackendBundle/Resources/config/routing/back.yml"
+    prefix:   /dashboard
+
+
+
+#Routes with fosuserbundle
 fos_user:
     resource: "@FOSUserBundle/Resources/config/routing/all.xml"
 
